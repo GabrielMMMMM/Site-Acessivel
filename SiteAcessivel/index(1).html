@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Acessível</title>
+    <link rel="stylesheet" href="./Assets/css/style(1).css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="h_titulo">
+        <h2>SITE ACESSÍVEL</h2>
+      </div>
+
+      <button id="btnMenu" onclick="funMenu()">Menu</button>
+
+      <nav id="navBar">
+        <ul id="listNavBar">
+          <a href="#idTitulo"><li>Home</li></a>
+          <a href="#idIntroducao"><li>O que é?</li></a>
+          <a href="#idImportancia"
+            ><li>Qual a importância nas páginas WEB?</li></a
+          >
+          <a href="#idW3c"><li>A W3C</li></a>
+          <a href="#idFaleconosco"><li>Fale Conosco</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="titulo" id="idTitulo">
+        <h1>O que é acessibilidade WEB?</h1>
+      </section>
+
+      <aside class="ferramentas">
+        <div class="audio">
+          <audio preload="none" controls>
+            <source src="Assets/audio/audioRealOficial.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <div class="fonte">
+          <input
+            type="button"
+            id="aumentar"
+            value="aumentar"
+            onclick="aumentar()"
+          />
+
+          <input
+            type="button"
+            id="diminuir"
+            value="diminuir"
+            onclick="diminuir()"
+          />
+        </div>
+      </aside>
+
+      <section class="conteudo">
+        <article class="introducao" id="idIntroducao">
+          <p>
+            A acessibilidade web refere-se à prática de tornar os sites e
+            aplicativos da web acessíveis e utilizáveis por todas as pessoas,
+            independentemente de suas habilidades físicas, sensoriais ou
+            cognitivas. Em outras palavras, trata-se de projetar e desenvolver
+            conteúdo online de forma que seja percebido, operado e compreendido
+            por qualquer pessoa, incluindo aquelas com deficiências visuais,
+            auditivas, motoras, cognitivas ou outras.
+          </p>
+          <p>
+            A acessibilidade web é uma parte essencial do design e
+            desenvolvimento de sites e aplicativos online, com o objetivo de
+            garantir que todos os usuários tenham igualdade de acesso à
+            informação e interação na web.
+          </p>
+        </article>
+
+        <article class="importancia" id="idImportancia">
+          <h2>Qual é a importância de ter acessibilidade nas páginas WEB?</h2>
+          <ul>
+            <li>
+              <h3>Inclusão e Equidade</h3>
+              <p>
+                A acessibilidade web garante que todas as pessoas,
+                independentemente de suas habilidades físicas, sensoriais ou
+                cognitivas, tenham acesso igualitário ao conteúdo online. Isso
+                promove a inclusão digital e a equidade no acesso à informação e
+                serviços na internet.
+              </p>
+            </li>
+            <li>
+              <h3>Conformidade Legal e Responsabilidade Social</h3>
+              <p>
+                Em muitos países, existem leis e regulamentos que exigem que os
+                sites sejam acessíveis para pessoas com deficiência. Além disso,
+                empresas e organizações têm uma responsabilidade social de
+                garantir que seu conteúdo online seja acessível a todos os
+                usuários, demonstrando seu compromisso com a diversidade e a
+                igualdade de oportunidades.
+              </p>
+            </li>
+            <li>
+              <h3>Ampliação do Público-Alvo</h3>
+              <p>
+                Ao tornar um site acessível, as empresas e organizações podem
+                alcançar um público mais amplo, incluindo pessoas com
+                deficiência, idosos e usuários com diferentes dispositivos e
+                condições de navegação. Isso pode resultar em um aumento no
+                tráfego do site, maior engajamento e potencialmente mais
+                conversões.
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="w3c" id="idW3c">
+          <h2>A W3C</h2>
+          <p>
+            o Consórcio World Wide Web (W3C), uma organização internacional que
+            desenvolve padrões para a web, desempenhou um papel fundamental na
+            promoção da acessibilidade web. O W3C começou a abordar questões de
+            acessibilidade em meados da década de 1990, reconhecendo a
+            importância de tornar a web acessível para pessoas com deficiência.
+            Em 1999, o W3C lançou as Diretrizes de Acessibilidade para Conteúdo
+            Web (WCAG) como um conjunto de recomendações para tornar o conteúdo
+            da web mais acessível.
+          </p>
+          <p>
+            Ao longo dos anos, o W3C continuou a desenvolver e revisar as WCAG
+            para mantê-las atualizadas e relevantes para as necessidades em
+            evolução dos usuários e da tecnologia. Além disso, o W3C também
+            criou outras especificações e ferramentas relacionadas à
+            acessibilidade, como o ARIA (Accessible Rich Internet Applications)
+            para melhorar a acessibilidade de aplicativos web dinâmicos e
+            interativos.
+          </p>
+          <figure>
+            <img
+              src="./Assets/img/w3c-opengraph-image(1).png"
+              alt="Logo da W3C"
+            />
+            <figcaption><p>Logo da W3C</p></figcaption>
+          </figure>
+        </article>
+
+        <aside>
+          <article class="finalizacao">
+            <h3>Considerações Finais</h3>
+            <p>
+              Obrigado por visitar nosso site dedicado à acessibilidade web.
+              Nosso compromisso é garantir que todas as pessoas,
+              independentemente de suas habilidades ou condições, possam
+              desfrutar plenamente da experiência online. Acreditamos firmemente
+              na importância da inclusão digital e estamos empenhados em tornar
+              a web um lugar mais acessível e acolhedor para todos.
+            </p>
+          </article>
+        </aside>
+
+        <section class="faleconosco" id="idFaleconosco">
+          <h2>Fale Conosco</h2>
+
+          <form>
+            <div class="linSessao1">
+              <!--Nome-->
+              <div class="sesNome">
+                <div class="colLabel">
+                  <label for="nome">Nome</label>
+                </div>
+                <div class="colInput">
+                  <input type="text" id="nome" placeholder="Kelvin" />
+                </div>
+                <h5 id="respNome"></h5>
+              </div>
+
+              <!--Sobrenome-->
+              <div class="sesSobrenome">
+                <div class="colLabel">
+                  <label for="sobrenome">Sobrenome</label>
+                </div>
+                <div class="colInput">
+                  <input type="text" id="sobrenome" placeholder="Hoefler" />
+                </div>
+                <h5 id="respSobrenome"></h5>
+              </div>
+            </div>
+
+            <!--Título-->
+            <div class="sesTitulo">
+              <div class="colLabel">
+                <label for="titulo">Título</label>
+              </div>
+              <div class="colInput">
+                <input
+                  type="text"
+                  id="titulo"
+                  placeholder="Feedback da Página"
+                />
+              </div>
+              <h5 id="respTitulo"></h5>
+            </div>
+
+            <div class="linSessao2">
+              <!--Email-->
+              <div class="sesEmail">
+                <div class="colLabel">
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="colInput">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="kelvin.hoefler@email.com"
+                  />
+                </div>
+                <h5 id="respEmail"></h5>
+              </div>
+
+              <!--Telefone-->
+              <div class="sesTelefone">
+                <div class="colLabel">
+                  <label for="telefone">Telefone:</label>
+                </div>
+                <div class="colInput">
+                  <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="94002-8922"
+                    pattern="[0-9]{9}"
+                    minlength="9"
+                    maxlength="9"
+                  />
+                </div>
+                <h5 id="respTelefone"></h5>
+              </div>
+            </div>
+
+            <!--Descrição-->
+            <div class="sesDescricao">
+              <div class="colLabel">
+                <label for="descricao">Descrição</label>
+              </div>
+              <div class="colInput">
+                <textarea
+                  id="descricao"
+                  name="descricao"
+                  placeholder="Parabéns pela Página..."
+                ></textarea>
+              </div>
+              <h5 id="respDescricao"></h5>
+            </div>
+
+            <div class="sesBotao">
+              <input type="submit" value="Enviar" />
+            </div>
+
+            <h5 id="resp"></h5>
+          </form>
+
+          <script src="Assets/js/script(1).js"></script>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      
+    </script>
+    <footer>
+      <div class="h_titulo">
+        <h2>SITE ACESSÍVEL</h2>
+      </div>
+      <p>Site criado para o grupo de IHC.</p>
+    </footer>
+  </body>
+</html>
